@@ -11,8 +11,6 @@ import junit.framework.TestCase;
  * 策略模式测试
  */
 public class StrategyTest extends TestCase {
-    private Duck duck;
-
     @Override
     protected void setUp() throws Exception {
         super.setUp();
@@ -22,7 +20,7 @@ public class StrategyTest extends TestCase {
      * 绿头鸭测试
      */
     public void testDuck() {
-        duck = new MallardDuck();
+        Duck duck = new MallardDuck();
         duck.performFly();
         duck.performQuack();
         System.out.println("-------------------");
